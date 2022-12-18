@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky Navigation Bar</title>
+    <link rel="stylesheet" href="./styles/navbar.css">
+    <link rel="stylesheet" href="./styles/contact.css">
+    <link rel="stylesheet" href="./styles/about.css">
+    <link rel="stylesheet" href="./js/navbar.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="content" id="content">
+            <div class="logo">
+                <a href="#"><img id="logopng" src="./images/logo.png" alt=""></a>
+            </div>
+            <ul class="menu-list">
+                <div class="icon cancel-btn">
+                    <i class="fas fa-times"></i>
+                </div>
+                    <li><a href="#banner">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#MyWork">My Work</a></li>
+                    <li><a href="#features"></a></li>
+                    <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="icon menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav> 
+    <div class="banner" id="banner"></div>
+    <div id="about">
+        <div class="myimgabout">
+            <a href="#contact"><img src="https://i.postimg.cc/8ccDb012/55-04-22-195526-removebg-preview-1.png" alt=""></a>
+        </div>
+        <div class="about_box">
+            <div class="moveaboutmeheading">
+                <h1>About</h1><span>Me</span>
+            </div>
+            <div class="tellaboutme">
+                <h2>Hello everyone! So my name is Yash Singh. </h2> 
+                <p class="myselfpara">I am an Entrepreneur, Web Developer and an Editor. 
+                    Also i have some knowledge in video editing and 
+                    image editing.As I am a full stack Web Developer I’m 
+                    quite expert in using coding and languages such 
+                    as JavaScript,HTML,CSS,Python,C++,React & UI/UX.
+                </p>
+            </div>
+        </div>
+    </div>
+    <section class="contactme" id="contact">
+		<div class="contact_text">
+			<h2>Contact Me</h2>
+			<h4>Let's Work Together</h4>
+			<p>Making Websites/design and functioning part</p>
+			<div class="contact_list">
+				<li><a>👉 Delhi - India</a></li>
+				<li><a href="https://singhyash3012@gmail.com/">👉 singhyash3012@gmail.com </a></li>
+                <li><a href="https://www.instagram.com/coderyashofficial/">👉 Instagram </a></li>
+				<li><a>👉 7877668465</a></li>
+			</div>
+            <div class="last_text">
+                <p>Developed by Yash Singh © 2022</p>
+            </div>
+		</div>
+        <div class="wrapper">
+            <div class="button">
+                <div class="icon"><a href="https://www.facebook.com/coderyash/" target="_blank">
+                    <i class="fab fa-facebook-f"></i>
+                </div>
+                <span class="facebook">Facebook</span></a>
+            </div>
+            <div class="button">
+                <div class="icon"><a href="https://www.instagram.com/coderyashofficial/" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </div>
+                <span id="instagram" class="instagram">Instagram </span></a>
+            </div>
+            <div class="button">
+                <div class="icon"><a href="https://www.linkedin.com/in/yash-singh-8a802a23b?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BTAKVdGl%2FRpq%2BuuppHB5htQ%3D%3D" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </div>
+                <span class="linkedin">LinkedIn</span></a>
+            </div>
+            <div class="button">
+                <div class="icon"><a href="https://github.com/GeniousYash" target="_blank">
+                    <i class="fab fa-github"></i>
+                </div>
+                <span class="github">GitHub</span></a>
+            </div>
+        </div>
+            <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	</section>
+    <script>
+        const body = document.querySelector("body");
+        const navbar = document.querySelector(".navbar");
+        const menuBtn = document.querySelector(".menu-btn");
+        const cancelBtn = document.querySelector(".cancel-btn");
+        menuBtn.onclick = ()=>{
+            navbar.classList.add("show");
+            menuBtn.classList.add("hide");
+            body.classList.add("disabled");
+        }
+        cancelBtn.onclick = ()=>{
+            body.classList.remove("disabled");
+            navbar.classList.remove("show");
+            menuBtn.classList.remove("hide");
+        }
+        window.onscroll = ()=>{
+            this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+        }
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+    <script src="./js/gsapindex.js"></script>
+</body>
+</html>

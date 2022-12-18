@@ -1,0 +1,149 @@
+*{
+    scroll-behavior:smooth;
+}
+body{
+    overflow-x: hidden;
+}
+#contact{
+    width: 100%;
+    margin: auto;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	align-items: center;
+	gap: 3rem;
+    background-color: rgba(0, 0, 0, 0.541);
+    margin-bottom: 0px;
+    padding-top: 3rem;
+    z-index: 20;
+}
+.contact_text{
+    padding-top: 1rem;
+    margin-top: 1rem;
+    margin-left: 10rem;
+    padding-left: 10rem;
+    padding-right: 4rem;
+}
+.contact_text h4{
+	margin: 25px 0;
+	color: rgb(202, 68, 68);
+	font-size: 20px;
+	font-weight: 600;
+}
+.contact_text h2{
+	font-size: 50px;
+    color: white;
+}
+.contact_text p{
+	color: white;
+	font-size: white;
+	line-height: 30px;
+	margin-bottom: 2rem;
+}
+.contact_list{
+	margin-bottom: 3rem;
+}
+.contact_list li{
+	margin-bottom: 10px;
+	display: block;
+}
+.contact_list li a{
+	display: block;
+	color: white;
+	font-size: white;
+	font-weight: 600;
+	transition: all .40s ease;
+}
+.contact_list li a:hover{
+	transform: scale(1.01) translateY(-5px);
+	color: rgb(202, 68, 68);
+}
+.last_text{
+    display: flex;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.288);
+    margin-top: 0px;
+    padding: 0px;
+    margin-bottom: 3rem;
+}
+.last_text p{
+    margin: auto;
+	text-align: center;
+	padding: 15px;
+	color: rgb(255, 255, 255);
+	font-size: 25px;
+	font-weight: 600;
+	letter-spacing: 1px;
+}
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+a{
+	text-decoration: none;
+	color:rgb(0, 0, 0) ;
+}
+.wrapper .button {
+    display: inline-block;
+    height: 60px;
+    width: 59px;
+    margin: 0 5px;
+    overflow: hidden;
+    background: #fff;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0px 10px 10px #000;
+    transition: all 0.3s ease-out;
+}
+.wrapper .button:hover {
+    width: 250px;
+}
+.wrapper .button .icon{
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    text-align: center;
+    border-radius: 50px;
+    box-sizing: border-box;
+    line-height: 60px;
+    transition: all 0.3s ease-out;
+}
+.wrapper .button:nth-child(1):hover .icon{
+    background: #4267B2;
+}
+.wrapper .button:nth-child(2):hover .icon{
+	background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,
+	#dc2743 50%,#cc2366 75%,#bc1888 100%);
+}
+.wrapper .button:nth-child(3):hover .icon{
+    background: #333;
+}
+.wrapper .button:nth-child(4):hover .icon{
+    background: #ff0000;
+}
+.wrapper .button .icon i{
+    font-size: 40px;
+    line-height: 60px;
+    transition: all 0.3s ease-out;
+}
+.wrapper .button:hover .icon i{
+    color: rgb(255, 255, 255);
+}
+.wrapper .button span{
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 60px;
+    margin-left: 5px;
+    margin: auto;
+    transition: all 0.3s ease-out;
+}
+.facebook{
+    color: #4267B2;
+    margin: auto;
+}
+.instagram{
+    color: #d6215e;
+    margin: auto;
+}
+.linkedin{
+    color: #333;
+}
+.github{
+    color: #ff0000;
+}
